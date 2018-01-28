@@ -3,9 +3,9 @@ const Web3 = require("web3");
 const { interface, bytecode } = require("./compile");
 
 const mnemonicPhrase = ""; //insert your mnemonic phrase
-const infuraURL = ""; //insert your URL from infura.io
+const infuraUrl = "https://rinkeby.infura.io/bFQtjjpSr9qX1a6uZcVZ";
 
-const provider = new HDWalletProvider(mnemonicPhrase, infuraURL);
+const provider = new HDWalletProvider(mnemonicPhrase, infuraUrl);
 const web3 = new Web3(provider);
 
 const deploy = async () => {
